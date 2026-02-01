@@ -4,16 +4,28 @@ Fortran implementation of Lewenstein strong-field approximation model to simulat
 high-harmonic generation (HHG) and isolated attosecond pulse generation for He atom
 driven by orthogonally polarized combined fields.  (Demo version)
 
-## Related publication
-Yu, W. et al., "Attosecond pulse generation isolated with a polarization-ionization gating scheme",
+# polarization-ionization-gating-hhg
+
+Two-step Fortran workflow:
+1) **Program 1 (HHG)** generates high-harmonic spectrum data.
+2) **Program 2 (IAP)** synthesizes an isolated attosecond pulse by superposing selected harmonics.
+
+Related publication:
+Yu, W. et al., *Attosecond pulse generation isolated with a polarization-ionization gating scheme*,
 Eur. Phys. J. D 73, 236 (2019).
 
-## Quick start (demo)
-### Requirements
-- Fortran compiler: gfortran (recommended) or ifort
-- OS: Linux/macOS/Windows (with compiler)
+---
 
-### Compile
+## Quick start
+
+### Requirements
+- Fortran compiler: `gfortran` (recommended) or Intel `ifort`
+
+---
+
+### Step 1 — HHG spectrum generation (Program 1)
+**Source:** `src/source1.f90`
+
+Compile:
 ```bash
-gfortran -O1 src/<Source1>.f90 -o hhg_demo
-gfortran -O2 src/<Source2>.f90 -o isolated_attosecond_pulse_demo
+gfortran -O2 src/source1.f90 -o hhg_demo
