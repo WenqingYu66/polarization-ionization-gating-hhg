@@ -15,5 +15,5 @@ Eur. Phys. J. D 73, 236 (2019).
 
 ### Compile
 ```bash
-gfortran -O1 src/<main_file>.f90 -o hhg_demo
-gfortran -O2 src/<main_file_2>.f90 -o isolated_attosecond_pulse_demo
+gfortran -O1 src/<Source1>.f90 -o hhg_demo
+gfortran -O2 src/<Source2>.f90 -o isolated_attosecond_pulse_demo
