@@ -29,3 +29,16 @@ Eur. Phys. J. D 73, 236 (2019).
 Compile:
 ```bash
 gfortran -O2 src/source1.f90 -o hhg_demo
+Run:
+
+./hhg_demo
+
+
+How to change parameters
+This project does not use a separate input file. To modify simulation parameters, edit them directly in src/source1.f90, then recompile and rerun.
+
+Output:
+
+HHG spectrum data files are written to the output folder defined in the code.
+
+Example outputs: output_example/
