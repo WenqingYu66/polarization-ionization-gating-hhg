@@ -1,2 +1,19 @@
 # polarization-ionization-gating-hhg
-We theoretically simulate high harmonic generation in the frequency domain and attosecond pulse generation in the time domain from helium atom irradiated by a combined field using Lewenstein’s strong-field approximation model in Fortran codes.
+
+Fortran implementation of Lewenstein strong-field approximation model to simulate
+high-harmonic generation (HHG) and isolated attosecond pulse generation for He atom
+driven by orthogonally polarized combined fields.  (Demo version)
+
+## Related publication
+Yu, W. et al., "Attosecond pulse generation isolated with a polarization-ionization gating scheme",
+Eur. Phys. J. D 73, 236 (2019).
+
+## Quick start (demo)
+### Requirements
+- Fortran compiler: gfortran (recommended) or ifort
+- OS: Linux/macOS/Windows (with compiler)
+
+### Compile
+```bash
+gfortran -O1 src/<main_file>.f90 -o hhg_demo
+gfortran -O2 src/<main_file>.f90 -o isolated attosecond pulse generation_demo
