@@ -33,6 +33,7 @@ Run:
 
 ./hhg_demo
 
+---
 
 How to change parameters
 This project does not use a separate input file. To modify simulation parameters, edit them directly in src/source1.f90, then recompile and rerun.
