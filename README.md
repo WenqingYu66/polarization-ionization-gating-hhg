@@ -32,9 +32,6 @@ gfortran -O2 src/source1.f90 -o hhg_demo
 Run:
 
 ./hhg_demo
-
----
-
 How to change parameters
 This project does not use a separate input file. To modify simulation parameters, edit them directly in src/source1.f90, then recompile and rerun.
 
@@ -43,3 +40,29 @@ Output:
 HHG spectrum data files are written to the output folder defined in the code.
 
 Example outputs: output_example/
+
+Step 2 — Isolated attosecond pulse synthesis (Program 2)
+Source: src/source2.f90
+
+Compile:
+
+gfortran -O2 src/source2.f90 -o iap_demo
+Run:
+
+./iap_demo
+Output:
+
+Attosecond pulse temporal data files are written to the output folder defined in the code.
+
+Example outputs: output_example/
+
+Plotting
+Plots were created using Origin based on the output data.
+Example figures are provided in figures/.
+
+Repository structure
+src/ Fortran source code (Program 1: HHG; Program 2: attosecond synthesis)
+
+output_example/ example outputs
+
+figures/ example plots
